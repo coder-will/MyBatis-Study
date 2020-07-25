@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.will.mapper.UserMapper">
+    <!--namespace指向了所需要实现的位置-->
+    <select id="selectUser" resultType="user">
+        select * from USER ;
+    </select>
+
+    <select id="selectUserById" parameterType="int" resultType="com.will.pojo.User">
+        select * from USER where id=#{id};
+    </select>
+
+    <select id="selectUserByNameAndPwd" parameterType="map" resultType="com.will.pojo.User">
+        select * from user where name=#{name} and pwd=#{pwd};
+    </select>
+
+    <insert id="insertUser" parameterType="map">
+        insert into USER(id,name,pwd) values (#{id},#{name},#{pwd});
+    </insert>
+
+    <update id="updateUser" parameterType="com.will.pojo.User">
+        update user set name=#{name},pwd=#{pwd} where id=#{id};
+    </update>
+
+    <delete id="deleteUser" parameterType="int">
+        delete from user where id=#{id};
+    </delete>
+</mapper>
