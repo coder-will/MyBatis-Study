@@ -8,13 +8,25 @@
         select * from USER ;
     </select>
 
-    <select id="selectUserById" parameterType="int" resultType="com.will.pojo.User">
+    <select id="selectUserById"  resultMap="UserMap">
         select * from USER where id=#{id};
     </select>
 
-    <select id="selectUserByNameAndPwd" parameterType="map" resultType="com.will.pojo.User">
+    <resultMap id="UserMap" type="User">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="pwd" property="pwd"/>
+    </resultMap>
+    
+
+    <select id="selectUserByNameAndPwd" parameterType="map" resultMap="UserMapByNameAndPwd">
         select * from user where name=#{name} and pwd=#{pwd};
     </select>
+    <resultMap id="UserMapByNameAndPwd" type="User">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="pwd" property="pwd"/>
+    </resultMap>
 
     <insert id="insertUser" parameterType="map">
         insert into USER(id,name,pwd) values (#{id},#{name},#{pwd});

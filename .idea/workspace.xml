@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe096ccd-ea7a-4b2c-b363-e61161625984" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mybatis-01/src/main/resources/db.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mybatis-01/src/main/resources/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01/src/main/resources/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-01/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,21 +67,26 @@
     </option>
   </component>
   <component name="ProjectId" id="1f5i4rIl4GP7hM6WLJNcIidPlJn" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mybatis-02/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.notifications" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -93,7 +97,7 @@
       <recent name="F:\Mybatis\mybatis-01\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MyTest.selectUser">
+  <component name="RunManager" selected="JUnit.MyTest.selectUserByNameAndPwd">
     <configuration name="MyTest.deleteUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatis-01" />
       <option name="PACKAGE_NAME" value="" />
@@ -124,6 +128,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyTest.selectUserById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-01" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyTest" />
+      <option name="METHOD_NAME" value="selectUserById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MyTest.selectUserByNameAndPwd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatis-01" />
       <option name="PACKAGE_NAME" value="" />
@@ -134,23 +148,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyTest.updateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-01" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyTest" />
-      <option name="METHOD_NAME" value="updateUser" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyTest.selectUserByNameAndPwd" />
+        <item itemvalue="JUnit.MyTest.selectUserById" />
         <item itemvalue="JUnit.MyTest.selectUser" />
         <item itemvalue="JUnit.MyTest.insertUser" />
         <item itemvalue="JUnit.MyTest.deleteUser" />
-        <item itemvalue="JUnit.MyTest.updateUser" />
-        <item itemvalue="JUnit.MyTest.selectUserByNameAndPwd" />
       </list>
     </recent_temporary>
   </component>
@@ -170,6 +174,9 @@
       <updated>1595514165796</updated>
       <workItem from="1595514170592" duration="6766000" />
       <workItem from="1595521048457" duration="1391000" />
+      <workItem from="1595652374626" duration="530000" />
+      <workItem from="1595656117045" duration="332000" />
+      <workItem from="1595773123066" duration="755000" />
     </task>
     <servers />
   </component>
@@ -177,6 +184,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="261" y="0" key="#Notifications" timestamp="1595652680234">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="261" y="0" key="#Notifications/0.0.1536.834@0.0.1536.834" timestamp="1595652680234" />
     <state x="261" y="0" key="#Project_Structure" timestamp="1595517822560">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -193,26 +204,34 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="517" y="65" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1595520025261" />
-    <state width="1483" height="200" key="GridCell.Tab.0.bottom" timestamp="1595522448738">
+    <state x="499" y="97" key="FileChooserDialogImpl" timestamp="1595656452433">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1483" height="200" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1595522448738" />
-    <state width="1483" height="200" key="GridCell.Tab.0.center" timestamp="1595522448738">
+    <state x="499" y="97" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1595656452433" />
+    <state width="1483" height="200" key="GridCell.Tab.0.bottom" timestamp="1595773897306">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1483" height="200" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1595522448738" />
-    <state width="1483" height="200" key="GridCell.Tab.0.left" timestamp="1595522448738">
+    <state width="1483" height="200" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1595773897306" />
+    <state width="1483" height="200" key="GridCell.Tab.0.center" timestamp="1595773897306">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1483" height="200" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1595522448738" />
-    <state width="1483" height="200" key="GridCell.Tab.0.right" timestamp="1595522448738">
+    <state width="1483" height="200" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1595773897306" />
+    <state width="1483" height="200" key="GridCell.Tab.0.left" timestamp="1595773897306">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1483" height="200" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1595522448738" />
-    <state x="0" y="43" key="new project wizard" timestamp="1595517489406">
+    <state width="1483" height="200" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1595773897306" />
+    <state width="1483" height="200" key="GridCell.Tab.0.right" timestamp="1595773897306">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="0" y="43" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1595517489406" />
+    <state width="1483" height="200" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1595773897306" />
+    <state x="176" y="0" key="SettingsEditor" timestamp="1595652756432">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="176" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1595652756432" />
+    <state x="0" y="202" width="1536" height="591" key="new project wizard" timestamp="1595773287663">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="0" y="202" width="1536" height="591" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1595773287663" />
     <state x="341" y="-1" width="852" height="1034" key="search.everywhere.popup" timestamp="1595518482512">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
