@@ -4,8 +4,8 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.will.mapper.UserMapper">
     <!--namespace指向了所需要实现的位置-->
-    <select id="selectUser" resultType="user">
-        select * from USER ;
+    <select id="selectUser" parameterType="map" resultType="User" >
+        select * from USER limit #{startindex},#{pageSize}
     </select>
 
     <select id="selectUserById"  resultMap="UserMap">

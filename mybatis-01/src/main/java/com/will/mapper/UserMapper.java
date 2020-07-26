@@ -2,6 +2,7 @@ package com.will.mapper;
 
 import com.will.pojo.User;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -10,13 +11,13 @@ import java.util.Map;
  */
 public interface UserMapper {
     //查询所有学生，返回List集合
-    List<User> selectUser();
+    List<User> selectUser(Map map);
 
     //根据Id查询学生
     User selectUserById(int id);
 
     //根据密码和名字查询用户 用map集合
-    User selectUserByNameAndPwd(Map map);
+    User selectUserByNameAndPwd();
 
     //插入用户
     int insertUser(Map map);

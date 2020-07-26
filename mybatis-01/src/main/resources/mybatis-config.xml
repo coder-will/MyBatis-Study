@@ -3,8 +3,14 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
+
+
     <!--配置properites简化使用-->
     <properties resource="db.properties"/>
+    <!--配置setting简化使用-->
+    <settings>
+        <setting name="logImpl" value="LOG4J"/>
+    </settings>
     <typeAliases>
 <!--        <typeAlias type="com.will.pojo.User" alias="user"/>-->
         <package name="com.will.pojo"/>

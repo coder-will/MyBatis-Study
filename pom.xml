@@ -11,10 +11,6 @@
     <modules>
         <module>mybatis-01</module>
         <module>mybatis-02</module>
-        <module>mybatis-02</module>
-        <module>mybatis-02</module>
-        <module>mybatis-02</module>
-        <module>mybatis-02</module>
     </modules>
 
     <dependencies>
@@ -43,6 +39,12 @@
             <artifactId>junit</artifactId>
             <version>4.13</version>
             <scope>test</scope>
+        </dependency>
+        <!--用于日志输出-->
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
         </dependency>
     </dependencies>
 
